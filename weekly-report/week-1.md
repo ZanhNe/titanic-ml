@@ -12,11 +12,8 @@
 | Thành viên | MSSV | Công việc | Link Commit/PR |
 |------------|------|-----------|----------------|
 | Diệp Bảo Doanh | 2251050018 | Thành lập nhóm, chọn đề tài (1 trong 13) , phân công,tải data | [https://github.com/ZanhNe/titanic-ml/commit/f8ca6ea81e83fb80ca697db47b8de1ae57bf2f55](https://github.com/ZanhNe/titanic-ml/commit/f8ca6ea81e83fb80ca697db47b8de1ae57bf2f55)|
-
 | Phạm Hoàng Phú Quý | 2351050148 | Thành lập nhóm, chọn đề tài (1 trong 13) , phân công, tải data | [https://github.com/ZanhNe/titanic-ml/commit/f8ca6ea81e83fb80ca697db47b8de1ae57bf2f55](https://github.com/ZanhNe/titanic-ml/commit/f8ca6ea81e83fb80ca697db47b8de1ae57bf2f55) |
-
 | Lê Thanh Hiếu | 2354120032 | Thành lập nhóm, chọn đề tài (1 trong 13) , phân công, tải data | [https://github.com/ZanhNe/titanic-ml/commit/f8ca6ea81e83fb80ca697db47b8de1ae57bf2f55](https://github.com/ZanhNe/titanic-ml/commit/f8ca6ea81e83fb80ca697db47b8de1ae57bf2f55)|
-
 | Nguyễn Trường Bách | 2351050010 | Thành lập nhóm, chọn đề tài (1 trong 13) , phân công, tải data | [https://github.com/ZanhNe/titanic-ml/commit/f8ca6ea81e83fb80ca697db47b8de1ae57bf2f55](https://github.com/ZanhNe/titanic-ml/commit/f8ca6ea81e83fb80ca697db47b8de1ae57bf2f55)|
 
 
