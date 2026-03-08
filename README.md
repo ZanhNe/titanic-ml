@@ -16,7 +16,7 @@
 ## Công nghệ
 - ML: Python, sklearn, Jupyter
 - Frontend: ReactJS
-- Backend: Flask
+- Backend: FastAPI
 - Tracking: wandb
 ## Cài đặt và chạy
 ### Yêu cầu
