@@ -11,10 +11,10 @@
 ## 1. Công việc đã hoàn thành
 | Thành viên | MSSV | Công việc | Link Commit/PR |
 |------------|------|-----------|----------------|
-| Diệp Bảo Doanh | 2251050018 | Chỉnh sửa lại một vài phần trong EDA | [https://github.com/ZanhNe/titanic-ml/commit/a61b01930eaaa8b1fda195a9b76b1a755c50fe07](Link commit)|
-| Phạm Hoàng Phú Quý | 2351050148 | Hỗ trợ EDA | [https://github.com/ZanhNe/titanic-ml/commit/735fec415a0b47dbbed9e2d3d56605ea31ca6a3b](Link commit) |
-| Lê Thanh Hiếu | 2354120032 | Cùng leader hỗ trợ EDA các bạn (Link commit do leader push để nhất quán thay vì chia ra do leader/Hiếu chỉ hỗ trợ một số thứ) | [https://github.com/ZanhNe/titanic-ml/commit/a61b01930eaaa8b1fda195a9b76b1a755c50fe07](Link commit)|
-| Nguyễn Trường Bách | 2351050010 | Thực hiện EDA | [https://github.com/ZanhNe/titanic-ml/commit/e6ca3ca40ee174013dc54c8b0b466cac7f6d240b](Link commit)|
+| Diệp Bảo Doanh | 2251050018 | Chỉnh sửa lại một vài phần trong EDA | [https://github.com/ZanhNe/titanic-ml/commit/a61b01930eaaa8b1fda195a9b76b1a755c50fe07]| (Link commit)|
+| Phạm Hoàng Phú Quý | 2351050148 | Hỗ trợ EDA | [https://github.com/ZanhNe/titanic-ml/commit/735fec415a0b47dbbed9e2d3d56605ea31ca6a3b]| (Link commit) |
+| Lê Thanh Hiếu | 2354120032 | Cùng leader hỗ trợ EDA các bạn (Link commit do leader push để nhất quán thay vì chia ra do leader/Hiếu chỉ hỗ trợ một số thứ) | [https://github.com/ZanhNe/titanic-ml/commit/a61b01930eaaa8b1fda195a9b76b1a755c50fe07]| (Link commit)|
+| Nguyễn Trường Bách | 2351050010 | Thực hiện EDA | [https://github.com/ZanhNe/titanic-ml/commit/e6ca3ca40ee174013dc54c8b0b466cac7f6d240b] |(Link commit)|
 
 
 ---
