@@ -1,0 +1,52 @@
+{
+    "model_info": {
+        "name": "Logistic Regression (Elastic Net)",
+        "version": "1.0.0",
+        "author": "Doanh+Hiếu",
+        "date_created": "2026-03-29 10:06:44",
+        "description": "Baseline model for Titanic survival prediction using SAGA solver."
+    },
+    "hyperparameters": {
+        "C": 0.1,
+        "l1_ratio": 0.5
+    },
+    "metrics": {
+        "accuracy": 0.8044692737430168,
+        "precision": 0.7931034482758621,
+        "recall": 0.6666666666666666,
+        "f1_score": 0.7244094488188977,
+        "roc_auc": 0.8608695652173912
+    },
+    "features_used": [
+        "num__Age",
+        "num__Fare",
+        "num__SibSp",
+        "num__Parch",
+        "num__FamilySize",
+        "num__Age_Class",
+        "num__Fare_Per_Person",
+        "num__IsAlone",
+        "cat__Pclass_1",
+        "cat__Pclass_2",
+        "cat__Pclass_3",
+        "cat__Sex_female",
+        "cat__Sex_male",
+        "cat__Embarked_C",
+        "cat__Embarked_Q",
+        "cat__Embarked_S",
+        "cat__Deck_A",
+        "cat__Deck_B",
+        "cat__Deck_C",
+        "cat__Deck_D",
+        "cat__Deck_E",
+        "cat__Deck_F",
+        "cat__Deck_G",
+        "cat__Deck_T",
+        "cat__Deck_U",
+        "cat__Title_Master",
+        "cat__Title_Miss",
+        "cat__Title_Mr",
+        "cat__Title_Mrs",
+        "cat__Title_Rare"
+    ]
+}
