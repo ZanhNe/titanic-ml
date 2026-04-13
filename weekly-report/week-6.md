@@ -35,8 +35,8 @@
 |------------|-------------------|
 | Diệp Bảo Doanh | Dựng wandb |
 | Lê Thanh Hiếu | Dựng wandb |  
-| Phạm Hoàng Phú Quý | Làm Frontend |
-| Nguyễn Trường Bách | Làm Frontend |
+| Phạm Hoàng Phú Quý | Demo FE |
+| Nguyễn Trường Bách | Demo FE |
 
 
 ---
