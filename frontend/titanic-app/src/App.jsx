@@ -4,43 +4,64 @@ import "./App.css";
 import image from "./assets/ocean-background.jpg"
 export default function App() {
   const [formData, setFormData] = useState({
+    name: "",
     age: "",
     gender: "male",
     pclass: "3",
     fare: "",
     embarked: "S",
-    sibsp: "",
-    parch: ""
+    sibsp: "0",
+    parch: "0",
+    ticket: "",
+    cabin: ""
   });
   const [result, setResult] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   // Phần này sẽ bỏ, vẫn để để thấy được phần result sau khi hoàn thành BE
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
+    setResult(null);
 
-    setTimeout(() => {
-      const age = parseInt(formData.age);
-      const pclass = parseInt(formData.pclass);
-      const fare = parseFloat(formData.fare);
-      const isFemale = formData.gender === "female";
-      let survivalScore = 50;
+    const payload = {
+      PassengerId: Math.floor(Math.random() * 1000),
+      Pclass: parseInt(formData.pclass),
+      Name: formData.name,
+      Sex: formData.gender,
+      Age: formData.age ? parseFloat(formData.age) : null,
+      SibSp: parseInt(formData.sibsp) || 0,
+      Parch: parseInt(formData.parch) || 0,
+      Ticket: formData.ticket || "N/A",
+      Fare: formData.fare ? parseFloat(formData.fare) : 0,
+      Cabin: formData.cabin || null,
+      Embarked: formData.embarked
+    };
 
-      if (isFemale) survivalScore += 30;
-      if (pclass === 1) survivalScore += 20;
-      else if (pclass === 2) survivalScore += 10;
-      if (age < 16) survivalScore += 15;
-      if (fare > 50) survivalScore += 10;
+    try {
+      const response = await fetch("http://localhost:8000/predict", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
 
-      const survived = survivalScore > 60;
-      const probability = Math.min(
-        95,
-        Math.max(5, survivalScore + (Math.random() * 10 - 5)),
-      );
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || "Có lỗi xảy ra khi gọi API");
+      }
 
-      setResult({ survived, probability });
+      const data = await response.json();
+      setResult({
+        survived: data.prediction === 1,
+        probability: data.probability_survived * 100
+      });
+    } catch (error) {
+      console.error("Error submitting prediction:", error);
+      alert(`Lỗi: ${error.message}`);
+    } finally {
       setIsLoading(false);
-    }, 1500);
+    }
   };
 
   const handleChange = (e) => {
@@ -119,6 +140,23 @@ export default function App() {
             <h2 className="predictor-title">Dự Đoán</h2>
 
             <form onSubmit={handleSubmit} className="form">
+              {/* Name Input */}
+              <div className="form-group">
+                <label htmlFor="name" className="form-label">
+                  Họ và Tên (Nên kèm danh xưng: Mr., Mrs., Miss.)
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="form-input"
+                  placeholder="Ví dụ: Mr. Owen Harris Braund"
+                />
+              </div>
+
               <div className="form-row">
                 {/* Age Input */}
                 <div className="form-group">
@@ -246,6 +284,38 @@ export default function App() {
                     className="form-input"
                     placeholder="Nhập số con cái / bố mẹ"
                   />
+              </div>
+
+              {/* Ticket & Cabin */}
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="ticket" className="form-label">
+                    Số Vé (Ticket)
+                  </label>
+                  <input
+                    type="text"
+                    id="ticket"
+                    name="ticket"
+                    value={formData.ticket}
+                    onChange={handleChange}
+                    className="form-input"
+                    placeholder="Ví dụ: A/5 21171"
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="cabin" className="form-label">
+                    Số Phòng (Cabin)
+                  </label>
+                  <input
+                    type="text"
+                    id="cabin"
+                    name="cabin"
+                    value={formData.cabin}
+                    onChange={handleChange}
+                    className="form-input"
+                    placeholder="Ví dụ: C85"
+                  />
+                </div>
               </div>
 
               {/* Submit Button */}

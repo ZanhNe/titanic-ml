@@ -1,19 +1,20 @@
 {
     "model_info": {
         "name": "Support Vector Machine (RBF Kernel)",
-        "version": "1.0.0",
-        "date_created": "2026-03-29 10:59:20",
+        "version": "2.0.0",
+        "date_created": "2026-05-02 13:33:42",
         "best_params": {
-            "C": 100,
-            "gamma": 0.001,
-            "kernel": "rbf"
+            "C": 1,
+            "degree": 2,
+            "gamma": "scale",
+            "kernel": "poly"
         }
     },
     "metrics": {
-        "Accuracy": 0.8435754189944135,
-        "Precision": 0.8253968253968254,
-        "Recall": 0.7536231884057971,
-        "F1-Score": 0.7878787878787878,
-        "ROC-AUC": 0.8421607378129118
+        "Accuracy": 0.8156424581005587,
+        "Precision": 0.8103448275862069,
+        "Recall": 0.6811594202898551,
+        "F1-Score": 0.7401574803149606,
+        "ROC-AUC": 0.8291172595520422
     }
 }

@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import joblib
 import pandas as pd
@@ -10,6 +11,14 @@ from app import preprocessor
 sys.modules['__main__'] = preprocessor
 
 app = FastAPI(title="Titanic Predictor API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 try:
     model_pipeline = joblib.load('../models/titanic_svm_final.joblib')
