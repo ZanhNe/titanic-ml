@@ -13,8 +13,8 @@
 |------------|------|-----------|----------------|
 | Diệp Bảo Doanh | 2251050018 | Hoàn thiện báo cáo + Modeling | [https://github.com/ZanhNe/titanic-ml/commit/bb5a77288a3ee5faa6935566444896f094c94678](https://github.com/ZanhNe/titanic-ml/commit/bb5a77288a3ee5faa6935566444896f094c94678) |
 | Lê Thanh Hiếu | 2354120032 | Hoàn thiện báo cáo + Modeling | [https://github.com/ZanhNe/titanic-ml/commit/bb5a77288a3ee5faa6935566444896f094c94678](https://github.com/ZanhNe/titanic-ml/commit/bb5a77288a3ee5faa6935566444896f094c94678) |
-| Phạm Hoàng Phú Quý | 2351050148 | Hoàn thiện báo cáo | [...]() |
-| Nguyễn Trường Bách | 2351050010 | Hoàn thiện báo cáo | [...]() |
+| Phạm Hoàng Phú Quý | 2351050148 | Hoàn thiện báo cáo + Chỉnh sửa FE + Demo | [https://github.com/ZanhNe/titanic-ml/commit/873cc40542c512fc230a1b446d13908f75964a7a](https://github.com/ZanhNe/titanic-ml/commit/873cc40542c512fc230a1b446d13908f75964a7a) |
+| Nguyễn Trường Bách | 2351050010 | Hoàn thiện báo cáo + Hỗ trợ FE + Demo | [https://github.com/ZanhNe/titanic-ml/commit/873cc40542c512fc230a1b446d13908f75964a7a](https://github.com/ZanhNe/titanic-ml/commit/873cc40542c512fc230a1b446d13908f75964a7a) |
 
 ---
 ## 2. Tiến độ tổng thể
