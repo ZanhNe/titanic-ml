@@ -24,15 +24,14 @@
 ### Chạy Notebook
 jupyter notebook notebooks/project_analysis.ipynb
 ### Chạy Backend
-cd backend && pip install -r requirements.txt && python app/main.py
+cd backend && pip install -r requirements.txt && uvicorn app.main:app --reload --port 8000
 ### Chạy Frontend
-cd frontend && npm install && npm start
+cd frontend/titanic-app && npm install && npm run dev
 ### Truy cập
-- Frontend: http://localhost:3000
-- API: http://localhost:5000 (hoặc port tương ứng)
+- Frontend: http://localhost:5173/
+- API: http://localhost:8000 (hoặc port tương ứng)
 ## Demo
-- wandb: [link]
-- Screenshot/video: [link hoặc mô tả]
+- wandb: [wandb_link.txt]
+- Screenshot: [screenshots]
 ## Nộp bài
-- Báo cáo: report/report.pdf
-- wandb link: wandb_link.txt
+- Báo cáo: [report/BaoCaoAI_Titanic_Nhom3.pdf]
